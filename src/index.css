@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Lausanne-300;
+  src: url("/fonts/Lausanne-300.woff2");
+}
+
+@font-face {
+  font-family: Lausanne-500;
+  src: url("/fonts/Lausanne-500.woff2");
+}
+
+@utility flex-center{
+  @apply flex justify-center items-center
+}
+
+@theme{
+  --font-Lausanne_500: Lausanne-500;
+  --font-Lausanne_300: Lausanne-300;
+  --breakpoint-mobile: 420px
+}
+
+
+html,body{
+  overflow-x: hidden;
+  font-size: 10px;
+  color: white;
+}
+
+.nav-item:hover {
+  & .nav-item-hover-container{
+    display: flex;
+    animation: hoverAnimation 0.2s ease-out;
+  }
+}
+
+@keyframes hoverAnimation {
+  0%{
+    height: 0;
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    height: 100%;
+  }
+}
+
+.nav-hover::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #D3FD50;
+  transition: all 0.1s linear;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+}
+
+.nav-hover:hover::after{
+  transform: translateY(0);
+}
+
+.nav-hover:hover{
+  & .nav-line{
+    background-color: #000;
+  }
+}
