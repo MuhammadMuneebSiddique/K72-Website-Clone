@@ -6,9 +6,6 @@ import Contact from './pages/contact'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 import NavBar from './components/NavBar'
-import Lenis from 'lenis'
-import { useEffect } from 'react'
-import "lenis/dist/lenis.css";  
 
 gsap.registerPlugin(ScrollTrigger)
 
