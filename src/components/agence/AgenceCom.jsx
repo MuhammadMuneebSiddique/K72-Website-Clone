@@ -214,7 +214,7 @@ export const SpecialMember = () => {
                     </div>
                 </div>
                 <div className='special-member-img2 absolute flex justify-center items-center h-screen w-full'>
-                    <img className='rounded-[1.5em] h-[45vh] mobile:h-[55vh] sm:h-[70vh] md:h-screen min-w-[20em] mobile:min-w-[25em] sm:min-w-[30em] md:min-w-[33em] object-cover' src="images/Lawrence_480x640-480x640.jpg" alt="image" />
+                    <img className='rounded-[1.5em] h-[45vh] mobile:h-[55vh] sm:h-[70vh] md:h-screen min-w-[20em] mobile:min-w-[25em] sm:min-w-[30em] md:min-w-[33em] object-cover' src="images/Carl_480x640-480x640.jpg" alt="image" />
                 </div>
             </div>
         </div>
